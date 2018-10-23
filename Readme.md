@@ -16,3 +16,23 @@
 3. Android Calculator sample code [here](/src/test/java/app/AndroidNativeApp.java)
 4. IOS Photo sample code [here](/src/test/java/app/IOSNativeApp.java)
 5. Machine Learning and Appium sample [here](/src/test/java/ai/IOSPhotoApp.java)
+
+## Running Multiple Appium Tests in Parallel
+Step 1: Start Appium 
+```bash
+$ appium -p 10000
+```
+```bash
+$ appium -p 10001
+```
+Step 2: Perform test
+1. on android devices
+```bash
+mvn clean test -Dtest.suite=android-parallel-test.xml
+```
+2. on IOS devices
+```bash
+mvn clean test -Dtest.suite=ios-parallel-test.xml
+```
+
+

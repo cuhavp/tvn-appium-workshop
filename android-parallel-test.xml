@@ -1,0 +1,7 @@
+<suite name="Android">
+    <test name="Calculator">
+        <classes>
+            <class name="parallel.AndroidParallelTest"/>
+        </classes>
+    </test>
+</suite>

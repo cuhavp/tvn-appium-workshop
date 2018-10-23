@@ -18,7 +18,7 @@ public class IOSNativeApp {
         caps.setCapability(MobileCapabilityType.DEVICE_NAME,"iPhone X");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.IOS);
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-        caps.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.apple.calculator");
+        caps.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.apple.mobilecal");
 
       IOSDriver dirver =   new IOSDriver( new URL("http://127.0.0.1:4723/wd/hub"),caps);
 

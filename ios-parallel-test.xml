@@ -1,0 +1,7 @@
+<suite name="IOS">
+    <test name="Calendar">
+        <classes>
+            <class name="parallel.IOSParallelTest"/>
+        </classes>
+    </test>
+</suite>
