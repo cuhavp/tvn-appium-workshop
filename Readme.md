@@ -16,6 +16,7 @@
 3. Android Calculator sample code [here](/src/test/java/app/AndroidNativeApp.java)
 4. IOS Photo sample code [here](/src/test/java/app/IOSNativeApp.java)
 5. Machine Learning and Appium sample [here](/src/test/java/ai/IOSPhotoApp.java)
+6. Find Element by Image sample [](/src/test/java/image/FindByImage.java)
 
 ## Running Multiple Appium Tests in Parallel
 Step 1: Start Appium 
