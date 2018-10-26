@@ -37,4 +37,30 @@ public class AndroidParallelTest {
         caps.setCapability(AndroidMobileCapabilityType.SYSTEM_PORT, 8201);
         new AndroidDriver(new URL("http://127.0.0.1:10001/wd/hub"), caps);
     }
+
+    @Test
+    void test03() throws MalformedURLException {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "android");
+        caps.setCapability(MobileCapabilityType.UDID, "ZY223M5GM6");
+        caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
+        caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.google.android.calculator");
+        caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.android.calculator2.Calculator");
+        caps.setCapability(AndroidMobileCapabilityType.SYSTEM_PORT, 8202);
+        new AndroidDriver(new URL("http://127.0.0.1:10002/wd/hub"), caps);
+    }
+
+    @Test
+    void test04() throws MalformedURLException {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "android");
+        caps.setCapability(MobileCapabilityType.UDID, "59408d050504");
+        caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
+        caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.google.android.calculator");
+        caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.android.calculator2.Calculator");
+        caps.setCapability(AndroidMobileCapabilityType.SYSTEM_PORT, 8203);
+        new AndroidDriver(new URL("http://127.0.0.1:10003/wd/hub"), caps);
+    }
 }
